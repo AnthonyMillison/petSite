@@ -1,0 +1,35 @@
+.hd {
+  grid-area: hd;
+  background-color: blue;
+}
+
+.ft {
+  grid-area: ft;
+  background-color: yellow;
+}
+
+.kora {
+  grid-area: kora;
+  background-color: purple;
+}
+
+.mazie {
+  grid-area: mazie;
+  background-color: green;
+}
+
+.finn {
+  grid-area: finn;
+  background-color: pink;
+}
+
+.gridContainer {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "hd   hd    hd"
+  "kora mazie finn"
+  "kora mazie finn"
+  "ft   ft    ft";
+}
