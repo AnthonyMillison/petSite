@@ -1,26 +1,65 @@
+body {
+  background-color: #732FCC;
+  margin:0;
+}
+
+/* navigation bar */
+#page-title {
+  text-align: center;
+  padding-top:20px;
+}
+
+
+
+/* headings */
+
+h2 {
+  font-family: Futara;
+}
+/* header */
 .hd {
   grid-area: hd;
-  background-color: blue;
+  background-color: #755A99;
+  width:100%;
+  margin: 0 auto;
+
+
+
 }
 
+/* footer */
 .ft {
   grid-area: ft;
-  background-color: yellow;
+
+}
+/* landing page image links */
+.albumCategory {
+  text-align: center;
 }
 
+.albumCategoryImg {
+  border-style: solid;
+  padding-top: 30px;
+  border-width: 2px;
+  border-color: #732FCC;
+  max-width: 100%;
+  height: auto;
+}
+.albumCategoryImg:hover {
+  border-radius: 10px;
+  border-color: #755A99;
+}
 .kora {
   grid-area: kora;
-  background-color: purple;
+
 }
 
 .mazie {
   grid-area: mazie;
-  background-color: green;
 }
 
 .finn {
   grid-area: finn;
-  background-color: pink;
 }
 
 .gridContainer {
@@ -29,7 +68,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "hd   hd    hd"
-  "kora mazie finn"
   "kora mazie finn"
   "ft   ft    ft";
 }
