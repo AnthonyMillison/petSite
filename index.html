@@ -7,18 +7,31 @@
   </head>
   <body>
       <div class="gridContainer">
+
         <div class="hd">
             <h1 id="page-title">The Fur Family</h1>
         </div>
-        <div class="ft">Footer</div>
-        <div id="kora" class="albumCategory">
-          <a href="#"><img class="albumCategoryImg" src="images/KoraThumb1.jpg"></img></a>
-          <h2>Kora</h2>
+
+        <div class="ft"></div>
+
+        <div id="kora" class="albumCategory flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <a href="#"><img class="albumCategoryImg" src="images/KoraThumb1.jpg"></img></a>
+              <h2>Kora</h2>
+            </div>
+
+            <div class="back">
+              <p>Test stuff goes here</p>
+            </div>
+          </div>
         </div>
+
         <div id="mazie" class="albumCategory">
           <a href="#"><img class="albumCategoryImg" src="images/KoraMazieThumb1.jpg"></img></a>
           <h2>Mazie</h2>
         </div>
+
         <div id="finn" class="albumCategory">
           <a href="#"><img class="albumCategoryImg" src="images/KoraThumb6.jpg"></img></a>
           <h2>Finn</h2>

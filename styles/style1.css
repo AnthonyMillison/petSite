@@ -1,5 +1,5 @@
 body {
-  background-color: #732FCC;
+  background-color: #8D51FF;
   margin:0;
 }
 
@@ -9,8 +9,6 @@ body {
   padding-top:20px;
 }
 
-
-
 /* headings */
 
 h2 {
@@ -19,39 +17,73 @@ h2 {
 /* header */
 .hd {
   grid-area: hd;
-  background-color: #755A99;
+  background-color: #BF9DFF;
   width:100%;
   margin: 0 auto;
-
-
-
 }
 
 /* footer */
 .ft {
   grid-area: ft;
-
 }
+
 /* landing page image links */
 .albumCategory {
   text-align: center;
 }
 
 .albumCategoryImg {
-  border-style: solid;
   padding-top: 30px;
-  border-width: 2px;
-  border-color: #732FCC;
   max-width: 100%;
   height: auto;
 }
 .albumCategoryImg:hover {
-  border-radius: 10px;
-  border-color: #755A99;
+
 }
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
 .kora {
   grid-area: kora;
-
 }
 
 .mazie {
