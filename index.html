@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/imgMouseOver.js"></script>
     <title>My test page</title>
   </head>
   <body>
@@ -12,36 +14,24 @@
             <h1 id="page-title">The Fur Family</h1>
         </div>
 
-        <div class="ft"></div>
-
-        <div id="kora" class="albumCategory flip-container" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
-            <div class="front">
-              <a href="#"><img class="albumCategoryImg" src="images/KoraThumb1.jpg"></img></a>
-              <h2>Kora</h2>
-            </div>
-
-            <div class="back">
-              <p>Test stuff goes here</p>
-            </div>
-          </div>
+        <div id="kora" class="albumCategory flip-container">
+          <a href="#"><img id="koraImg" class="albumCategoryImg" src="images/Kora8.jpg"></img></a>
+          <h2>Kora</h2>
         </div>
 
         <div id="mazie" class="albumCategory">
-          <a href="#"><img class="albumCategoryImg" src="images/KoraMazieThumb1.jpg"></img></a>
-          <h2>Mazie</h2>
+          <a href="#"><img id="mazieImg" class="albumCategoryImg" onmouseover="mOver()" onmouseout="mOut()" src="images/Mazie2.jpg"></img></a>
+
+
+          <h2 id="mazieText">Mazie</h2>
         </div>
 
         <div id="finn" class="albumCategory">
-          <a href="#"><img class="albumCategoryImg" src="images/KoraThumb6.jpg"></img></a>
+          <a href="#"><img id="finnImg" class="albumCategoryImg" src="images/Finn1.jpg"></img></a>
           <h2>Finn</h2>
         </div>
+
       </div>
-
-
-
-
-
     <footer>
     </footer>
   </body>
