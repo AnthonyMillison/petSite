@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/imgMouseOver.js"></script>
     <title>My test page</title>
@@ -11,24 +12,29 @@
       <div class="gridContainer">
 
         <div class="hd">
-            <h1 id="page-title">The Fur Family</h1>
+            <h1 id="site-title">The Fur Family</h1>
         </div>
 
         <div id="kora" class="albumCategory flip-container">
-          <a href="#"><img id="koraImg" class="albumCategoryImg" src="images/Kora8.jpg"></img></a>
+          <a href="kora-gallery.html">
+            <img id="koraImg" class="albumCategoryImg"
+                              src="images/Kora8.jpg"></img></a>
           <h2>Kora</h2>
         </div>
 
         <div id="mazie" class="albumCategory">
-          <a href="#"><img id="mazieImg" class="albumCategoryImg" onmouseover="mOver()" onmouseout="mOut()" src="images/Mazie2.jpg"></img></a>
-
-
+          <a href="#">
+            <img id="mazieImg" class="albumCategoryImg"
+                               onmouseover="mOver()" onmouseout="mOut()"
+                               src="images/Mazie2.jpg"></img></a>
           <h2 id="mazieText">Mazie</h2>
         </div>
 
         <div id="finn" class="albumCategory">
-          <a href="#"><img id="finnImg" class="albumCategoryImg" src="images/Finn1.jpg"></img></a>
-          <h2>Finn</h2>
+          <a href="#">
+            <img id="finnImg" class="albumCategoryImg"
+                              src="images/Finn1.jpg"></img></a>
+          <h2>Mr. Finn</h2>
         </div>
 
       </div>

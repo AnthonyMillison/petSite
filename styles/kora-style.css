@@ -1,0 +1,70 @@
+.gridContainer {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+  "hd                  hd                  hd"
+  "leftArrow           mainImage           rightArrow"
+  "koraTitle           koraTitle           koraTitle"
+  "sort-bar            sort-bar            sort-bar"
+  "thumbnail-container thumbnail-container thumbnail-container"
+}
+
+/* links */
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.koraTitle {
+  grid-area: koraTitle;
+  text-align: center;
+}
+
+#koraTagline {
+  padding-bottom: 20px;
+}
+
+
+/* Main display for images area */
+
+.leftArrow {
+  grid-area: leftArrow;
+}
+
+.mainImage {
+  grid-area: mainImage;
+
+}
+
+.displayedImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.rightArrow {
+  grid-area: rightArrow;
+}
+
+
+
+
+
+.sort-bar {
+  grid-area: sort-bar;
+}
+
+.thumbnail-container {
+  grid-area: thumbnail-container;
+}
